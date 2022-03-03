@@ -10,7 +10,7 @@
 :root{
     --bg_buttons: #4A4A4A;
     --end_meeting:#B92600;
-    --bg_footer:#222222 ;
+    --bg_footer:#222222;
     --bg_main:black;
 }
 /* #endregion color palette */
@@ -72,9 +72,56 @@ img{
 /* #endregion site_main */
 
 /* #region site_footer */
-#site_footer{
+footer{
     margin-top: 20px;
-    height: 60px;
     background-color: var(--bg_footer);
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
 }
+
+.footer_nav a, .footer_left a{
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    row-gap: 0.5rem;
+}
+
+.footer_nav a span, .footer_left a span{
+    font-size: 11px;
+}
+
+.footer_nav a i, .footer_left a i{
+    font-size: 20px;
+}
+
+.footer_nav ul{
+    list-style: none;
+    column-gap: 1rem;
+}
+
+.footer_nav{
+    justify-content: center;
+}
+
+.footer_right{
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    background-color: var(--bg_buttons);
+    padding: 0 1rem 0 1rem;
+}
+
+.footer_right a{
+    text-decoration: none;
+    font-size: 11px;
+    color: var(--end_meeting);
+}
+
+.footer_left {
+column-gap: 1rem;
+}
+
+
 /* #endregion site_footer */
