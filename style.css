@@ -121,7 +121,15 @@ footer{
 
 .footer_left {
 column-gap: 1rem;
+margin-left: 1rem;
 }
 
+.fa-angle-up{
+font-size: 11px !important;
+}
+
+.green{
+    color: green;
+}
 
 /* #endregion site_footer */
